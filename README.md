@@ -32,24 +32,39 @@ The project consists of two main agents:
 
 ## Installation
 
-1. Clone the repository:
+1. Download and install Ollama
+  ```
+  https://ollama.com/download/OllamaSetup.exe
+  ```
+
+2. Pull llama 3.2 model
+  ```sh
+  ollama run llama3.2
+  ```
+
+3. Run the model as a server in localhost
+  ```sh
+  ollama serve
+  ```
+
+4. Clone the repository:
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/RepZ97/email-classification-and-response-llama3.2.git
+    cd email-classification-and-response-llama3.2
     ```
 
-2. Create a virtual environment and activate it:
+5. Create a virtual environment and activate it:
     ```sh
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
 
-3. Install the required packages:
+6. Install the required packages:
     ```sh
     pip install -r requirements.txt
     ```
 
-4. Install `crewai` if not already installed:
+7. Install `crewai` if not already installed:
     ```sh
     pip install crewai
     ```
